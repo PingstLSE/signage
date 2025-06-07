@@ -21,17 +21,16 @@ A digital signage solution using Raspberry Pi 4 and FullPageOS to display a Goog
 ### 1. Prepare FullPageOS
 
 1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
-2. Download [FullPageOS](https://github.com/guysoft/FullPageOS#where-to-get-it)
-3. Use Raspberry Pi Imager to flash FullPageOS (latest Nightly build) to your MicroSD card
+2. Use Raspberry Pi Imager to flash FullPageOS (latest Nightly build) to your MicroSD card
 
 ### 2. Configure FullPageOS
 
 After flashing the image, but before ejecting the SD card into the Raspberry PI:
 
-1. Open the `boot` partition
+1. Reinsert the SD card, and open the `bootfs` partition
 2. Edit `fullpageos.txt`:
    ```
-   # Replace with your GitHub Pages URL
+   # Replace with your Web Content URL
    https://yourusername.github.io/signage/
    ```
 
