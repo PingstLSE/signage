@@ -23,7 +23,7 @@ display_auto_detect=1
 auto_initramfs=1
 
 # Enable DRM VC4 V3D driver
-dtoverlay=vc4-kms-v3d
+# dtoverlay=vc4-kms-v3d
 max_framebuffers=2
 
 # Don't have the firmware create an initial video= setting in cmdline.txt.
@@ -43,13 +43,13 @@ arm_boost=1
 otg_mode=1
 
 [cm5]
-dtoverlay=dwc2,dr_mode=host
+# dtoverlay=dwc2,dr_mode=host
 
 [pi4]
 # Enable DRM VC4 V3D driver on top of the dispmanx display stack
 # disabling, since fkms does not allow rotation via config.txt
 # https://www.raspberrypi.com/documentation/computers/config_txt.html#display_hdmi_rotate
-#dtoverlay=vc4-fkms-v3d
+# dtoverlay=vc4-fkms-v3d
 max_framebuffers=2
 
 [all]
